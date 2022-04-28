@@ -1,0 +1,26 @@
+{
+  "short_name": "Sabka Bazaar",
+  "name": "Sabka Bazaar | Online Store",
+  "description": "Sabka bazaar is an online shopping store. Free shipping of millions of items. Gt the best shopping experience and affordable price. Enjoy great deals and festival offers.",
+  "icons": [
+    {
+      "src": "logo.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "190x86"
+    },
+    {
+      "src": "logo150.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
