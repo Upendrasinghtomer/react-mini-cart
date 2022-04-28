@@ -1,2 +1,2 @@
-# react-mini-cart
+# sabka-bazaar
 react redux mini shopping cart
