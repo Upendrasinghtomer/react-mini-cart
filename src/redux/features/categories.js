@@ -6,7 +6,9 @@ const initialState = {
 
 export const getCategories = createAsyncThunk("/categories", async () => {
   const res = await categoriesApi.getCategories();
-  return res.data;
+  const data = res.data.sort((a, b) => (a.order > b.order ? 1 : -1));
+  const filtered = data.filter((x) => x.order > 0);
+  return filtered;
 });
 
 const categoriesSlice = createSlice({
@@ -16,7 +18,6 @@ const categoriesSlice = createSlice({
   extraReducers: {
     [getCategories.fulfilled]: (state, action) => {
       return {
-        ...state,
         categories: [...action.payload],
       };
     },
