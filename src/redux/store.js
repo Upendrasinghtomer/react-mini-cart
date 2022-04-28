@@ -11,6 +11,7 @@ const store = configureStore({
     categories: categoriesReducer,
     products: productsReducer,
   },
+  devTools: process.env.NODE_ENV !== "production",
 });
 
 export default store;
